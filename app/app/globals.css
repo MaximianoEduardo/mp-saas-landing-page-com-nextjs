@@ -122,3 +122,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+
+.bg-body{
+  background-image: url('/Background.png') ;
+}
