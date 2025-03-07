@@ -1,3 +1,5 @@
+"use client"
+
 import CallOutComponent from "./components/callout/callout";
 import CardComponent from "./components/card/card";
 import FooterComponent from "./components/footer/footer";
@@ -5,7 +7,7 @@ import EmailFormComponent from "./components/form/form";
 import HeaderComponent from "./components/header/header";
 import HowWorksComponent from "./components/howWorks/howWorks";
 import { Button } from "./components/ui/button";
-
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -15,30 +17,51 @@ export default function Home() {
         <HeaderComponent />
       </header>
 
-
-      <section className="px-4 md:px-0">
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="px-4 md:px-0"
+      >
         <CallOutComponent
             isH1={true}
             title="Simplifique Seus Estudos" 
             description="Deixe que nós fazemos a curadoria para você. Assine nossa plataforma e receba todos os meses um ebook novo de programação.">
           <EmailFormComponent />
         </CallOutComponent>
-      </section>
+      </motion.section>
 
+      
 
-      <section className="w-full bg-white px-4 md:px-0">
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="w-full bg-white px-4 md:px-0"
+      >
         <HowWorksComponent />
-      </section>
+      </motion.section>
 
-      <section className="px-4 md:px-0">
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="px-4 md:px-0"
+      >
         <CallOutComponent
             title="Preço Simples e Transparente" 
             description="Pra que inúmeros planos quando nós sabemos exatamente o que é melhor para você? Assine o nosso plano mensal Pro Premium VIP e garanta mensalmente um ebook novo de programação. E por menos de um café por dia. ">
           <CardComponent />
         </CallOutComponent>
-      </section>
+      </motion.section>
 
-      <section className="bg-white px-4 md:px-0">
+
+      <motion.section
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="bg-white px-4 md:px-0"
+      >
         <CallOutComponent
             title="Pronto Para Mudar Sua Vida?" 
             description="Faça como milhares de outras pessoas. Assine nosso produto e tenha garantido seus estudos ">
@@ -52,8 +75,7 @@ export default function Home() {
 
           
         </CallOutComponent>
-      </section>
-
+      </motion.section>
 
       <section className="bg-white px-4 md:px-0">
         <FooterComponent />
