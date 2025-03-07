@@ -28,7 +28,7 @@ export default function EmailFormComponent() {
 
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className=" flex flex-col w-full">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="flex lg:p-0 px-3 flex-col w-full">
                 <div className=" flex gap-3">
                     <FormField
                         control={form.control}
