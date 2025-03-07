@@ -1,83 +1,94 @@
-# SaaS Landing Page com Next.js e Shadcn/UI
+# 📚 LivroSaaS - Landing Page
 
-Crie uma landing page para um SaaS com o estilo de design do Notion usando **Next.js**, **Tailwind CSS** e **Shadcn/UI**.
+![Status do Projeto](https://img.shields.io/badge/status-concluido-brightgreen)
+![Licença](https://img.shields.io/badge/licença-MIT-blue)
+![Versão](https://img.shields.io/badge/versão-1.0.0-orange)
 
-## 🤓 Antes de começar
+Uma elegante landing page para um serviço de assinatura de ebooks de programação, desenvolvida com Next.js, Tailwind CSS e Shadcn/UI, seguindo o estilo de design do Notion.
 
-Este mini-projeto será desenvolvido do zero — a transposição do design faz parte do desafio! Não há arquivos iniciais. Comece com um novo projeto **Next.js**.
+## 📋 Índice
 
-## 🔨 Requisitos
+- [Visão Geral](#-visão-geral)
+- [Demonstração](#-demonstração)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Funcionalidades](#-funcionalidades)
+- [Instalação](#-instalação)
+- [Como Usar](#-como-usar)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Contribuição](#-contribuição)
+- [Licença](#-licença)
+- [Contato](#-contato)
 
-- **Navbar:** Implemente uma Navbar simples com:
-    - Logotipo à esquerda.
-    - Links de navegação (Funcionamento, Preço, Login) à direita.
-    - Siga o design do Figma.
+## 🔍 Visão Geral
 
-- **Seção Hero:** Crie a seção principal "Hero" com:
-    - Título: **"Simplifique Seus Estudos"**.
-    - Subtítulo explicativo sobre a plataforma.
-    - Campo de input para e-mail.
-    - Botão de call to action (CTA) **"Assine Agora"**.
-    - Siga o design do Figma.
+O LivroSaaS é uma plataforma de assinatura que oferece ebooks de programação cuidadosamente selecionados. Este projeto consiste em uma landing page moderna e responsiva que apresenta os benefícios e funcionalidades do serviço, com foco em uma experiência de usuário intuitiva e atraente.
 
-> 👀 **Dicas**:
->
-> - Use o componente `Input` do `shadcn/ui` para o campo de e-mail.
-> - Use o componente `Button` do `shadcn/ui` para todos os botões.
+## 🎬 Demonstração
 
-- **Seção "Como Funciona":** Explique o funcionamento em três etapas:
-    - Acesso a um ebook por mês.
-    - Curadoria especial.
-    - Cancelamento a qualquer momento.
-    - Siga o design do Figma.
+[Link para demonstração ao vivo](https://livro-saas.vercel.app)
 
-- **Seção de Preços:** Crie a seção de preços com destaque para o plano "Pro Premium VIP" (R$ 29/mês) incluindo:
-    - 1 ebook por mês.
-    - Curadoria especial.
-    - Acesso ilimitado.
-    - Cancelamento a qualquer momento.
+![Screenshot da Landing Page](./public/screenshot.png)
 
-- **Seção Final com CTA:** Incentive a assinatura com:
-    - Título: **"Pronto Para Mudar Sua Vida?"**.
-    - Texto de suporte.
-    - Botão de CTA.
+## 🛠 Tecnologias Utilizadas
 
-- **Rodapé:** Implemente um rodapé simples com:
-    - Logotipo da empresa.
-    - Copyright e informações legais.
+- **Next.js 15** - Framework React com renderização do lado do servidor
+- **React 19** - Biblioteca JavaScript para construção de interfaces
+- **Tailwind CSS 4** - Framework CSS utilitário
+- **Shadcn/UI** - Componentes de UI reutilizáveis
+- **Framer Motion** - Biblioteca para animações
+- **TypeScript** - Superset tipado de JavaScript
+- **React Hook Form** - Gerenciamento de formulários
+- **Zod** - Validação de esquemas
 
-- **Design Responsivo:** Adapte o design para dispositivos móveis:
-    - Crie um menu mobile com `shadcn/ui`.
-    - Siga o design do Figma.
+## ✨ Funcionalidades
 
+- **Navbar Responsiva** - Com logotipo e links de navegação
+- **Seção Hero** - Apresentação principal com formulário de captura de email
+- **Seção "Como Funciona"** - Explicação do serviço em três etapas
+- **Seção de Preços** - Detalhes do plano de assinatura
+- **Call-to-Action Final** - Incentivo à assinatura
+- **Design Responsivo** - Adaptação para todos os tamanhos de tela
+- **Animações** - Transições suaves ao rolar a página
 
-## 🔨 Desafio Extra
+## 📥 Instalação
 
-- **Animações:** Adicione animações de transição suave ao rolar a página.
+Siga estes passos para configurar o projeto localmente:
 
-## 🎨 Design Sugerido
+1. Clone o repositório:
 
-Siga o design no Figma para este mini-projeto.
+   ```bash
+   git clone https://github.com/seu-usuario/livro-saas.git
+   cd livro-saas
+   ```
 
-### Figma
+2. Instale as dependências:
 
-🔗 [Link do design](https://www.figma.com/community/file/1423775673058225189/mini-projeto-saas-landing-page-com-next-js)
+   ```bash
+   npm install
+   # ou
+   yarn install
+   # ou
+   pnpm install
+   ```
 
-## 👉🏽 Sobre este Mini-Projeto
+3. Inicie o servidor de desenvolvimento:
 
-### O que você irá praticar:
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   # ou
+   pnpm dev
+   ```
 
-#### React
+4. Acesse `http://localhost:3000` no seu navegador.
 
-- Criar e organizar componentes modulares.
-- Estilização com Next.js.
+## 🚀 Como Usar
 
-#### Tailwind CSS
+Após a instalação, você pode:
 
-- Estilizar componentes de forma responsiva.
-- Trabalhar com grids e/ou flexbox para layout.
+- Modificar os componentes em `app/components/` para personalizar a interface
+- Ajustar os estilos no Tailwind editando o arquivo `tailwind.config.js`
+- Adicionar novas páginas criando arquivos na pasta `app/`
 
-### Pré-requisitos
-
-- Conhecimento básico de **Next.js**.
-- Experiência com **Tailwind CSS**.
+Para construir a versão de produção:
