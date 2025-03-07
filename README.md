@@ -14,9 +14,6 @@ Uma elegante landing page para um serviço de assinatura de ebooks de programaç
 - [Funcionalidades](#-funcionalidades)
 - [Instalação](#-instalação)
 - [Como Usar](#-como-usar)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Contribuição](#-contribuição)
-- [Licença](#-licença)
 - [Contato](#-contato)
 
 ## 🔍 Visão Geral
@@ -25,9 +22,9 @@ O LivroSaaS é uma plataforma de assinatura que oferece ebooks de programação 
 
 ## 🎬 Demonstração
 
-[Link para demonstração ao vivo](https://livro-saas.vercel.app)
+[Link para demonstração ao vivo]([https://livro-saas.vercel.app](https://mp-saas-landing-page-com-nextjs-myxipcre8.vercel.app/))
 
-![Screenshot da Landing Page](./public/screenshot.png)
+![Screenshot da Landing Page]([image](https://github.com/user-attachments/assets/10fb20e3-58e0-42ff-9e9c-043f2aff11ff))
 
 ## 🛠 Tecnologias Utilizadas
 
@@ -92,3 +89,7 @@ Após a instalação, você pode:
 - Adicionar novas páginas criando arquivos na pasta `app/`
 
 Para construir a versão de produção:
+
+## 🚀 Contato
+
+- edu.maxi.96@gmail.com
