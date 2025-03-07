@@ -28,7 +28,7 @@ export default function CallOutComponent({
                 {isH1 ? <h1 className="font-bold text-6xl text-center"> {title} </h1> : <h2 className="font-bold text-6xl text-center"> {title} </h2>}
 
 
-                <h2 className="font-normal text-xl text-center  text-[#6B7280] max-w-[827px]">
+                <h2 className="font-normal text-xl text-center text-[#6B7280] text-wrap max-w-full lg:max-w-[827px]">
                     {description}
                 </h2>
             </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface linkI {
     name: string;
     path: string;
@@ -20,11 +22,11 @@ export default function NavBar(){
         },
     ];
 
-    const listOfLinks = links.map(link  => <li key={link.path}> {link.name} </li>);
+    const listOfLinks = links.map(link  => <Link key={link.path} href={link.path}> {link.name} </Link>);
 
 
     return (
-        <nav className="flex justify-end ">
+        <nav className="lg:flex justify-end hidden">
             <ul className="justify-center items-center flex gap-7">
                 { listOfLinks }
             </ul>
