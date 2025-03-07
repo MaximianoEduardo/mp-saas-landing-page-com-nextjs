@@ -1,36 +1,50 @@
 "use client"
 
-import EmailFormComponent from "../form/form";
+
+export default function CallOutComponent({
+    children,
+    title,
+    description,
+    isH1
+}: Readonly<{
+    children: React.ReactNode;
+    title: string;
+    description: string;
+    isH1?: boolean;
+}>) {
 
 
-export default function CallOutComponent() {
+
 
     return (
 
-        
-        <div className="sectionCallOut pt-20 grid grid-rows-2 gap-16" >
 
-            
+        <div className="sectionCallOut pt-20 pb-20 grid grid-rows-2 gap-16" >
+
+
 
             <div className="content flex flex-col justify-center items-center gap-2">
-                <h1 className="font-bold text-6xl text-center">Simplifique Seus Estudos </h1>
+
+                {isH1 ? <h1 className="font-bold text-6xl text-center"> {title} </h1> : <h2 className="font-bold text-6xl text-center"> {title} </h2>}
+
+
                 <h2 className="font-normal text-xl text-center  text-[#6B7280] max-w-[827px]">
-                    Deixe que nós fazemos a curadoria para você. Assine nossa plataforma e receba todos os meses um ebook novo de programação.
+                    {description}
                 </h2>
             </div>
 
             <div className="form flex justify-center items-center max-w-[424px] mx-auto">
 
+                {children}
 
-                <EmailFormComponent />
 
 
             </div>
-            
 
-            
+
+
         </div>
 
-        
+
     );
 }
